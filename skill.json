@@ -1,5 +1,5 @@
 {
-  "name": "cart-recovery-conversational-skill",
+  "name": "genpark-cart-recovery-conversational-skill",
   "description": "GenPark AI Agent Skill - Conversational cart recovery retention agent designed to analyze abandoned shopping sessions and negotiate discounts dynamically to maximize margins while recovering lost sales.",
   "version": "1.0.0",
   "author": "genpark",
