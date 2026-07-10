@@ -1,8 +1,8 @@
 {
   "name": "cart-recovery-conversational-skill",
-  "description": "Conversational cart recovery retention agent designed to analyze abandoned shopping sessions and negotiate discounts dynamically to maximize margins while recovering lost sales.",
+  "description": "GenPark AI Agent Skill - Conversational cart recovery retention agent designed to analyze abandoned shopping sessions and negotiate discounts dynamically to maximize margins while recovering lost sales.",
   "version": "1.0.0",
-  "author": "alphaparkinc",
+  "author": "genpark",
   "inputs": {
     "session_id": {
       "type": "string",
@@ -13,11 +13,21 @@
       "description": "Items left in the cart.",
       "items": {
         "properties": {
-          "item_name": { "type": "string" },
-          "price": { "type": "number" },
-          "quantity": { "type": "integer" }
+          "item_name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "quantity": {
+            "type": "integer"
+          }
         },
-        "required": ["item_name", "price", "quantity"]
+        "required": [
+          "item_name",
+          "price",
+          "quantity"
+        ]
       }
     },
     "abandon_reason": {
@@ -29,10 +39,21 @@
       "description": "Conversation history between the customer and the recovery bot.",
       "items": {
         "properties": {
-          "sender": { "type": "string", "enum": ["customer", "bot"] },
-          "text": { "type": "string" }
+          "sender": {
+            "type": "string",
+            "enum": [
+              "customer",
+              "bot"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
         },
-        "required": ["sender", "text"]
+        "required": [
+          "sender",
+          "text"
+        ]
       }
     }
   },
@@ -44,9 +65,20 @@
     "negotiation_state": {
       "type": "object",
       "properties": {
-        "current_discount_percent": { "type": "number" },
-        "max_allowed_discount_percent": { "type": "number" },
-        "status": { "type": "string", "enum": ["negotiating", "accepted", "rejected"] }
+        "current_discount_percent": {
+          "type": "number"
+        },
+        "max_allowed_discount_percent": {
+          "type": "number"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "negotiating",
+            "accepted",
+            "rejected"
+          ]
+        }
       }
     }
   },
