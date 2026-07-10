@@ -1,4 +1,4 @@
-# cart-recovery-conversational-skill
+# genpark-cart-recovery-conversational-skill
 
 > **GenPark AI Agent Skill** -- # Conversational Cart Recovery Skill
 
