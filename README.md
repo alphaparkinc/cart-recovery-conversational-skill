@@ -1,4 +1,6 @@
-# Conversational Cart Recovery Skill
+# cart-recovery-conversational-skill
+
+> **GenPark AI Agent Skill** -- # Conversational Cart Recovery Skill
 
 This repository contains the **Conversational Cart Recovery Skill** — a modular developer Python client SDK (`cart_recovery.py`), an agent skill configuration interface (`skill.json`), and executable dialogue tests. It is designed to engage visitors who abandon carts via SMS/WhatsApp or onsite chat, utilizing dynamic discount bidding to recover sales while protecting product profit margins.
 
